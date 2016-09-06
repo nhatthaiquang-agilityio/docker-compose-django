@@ -1,6 +1,6 @@
-## Django Development With Docker Compose and Machine
+# Django Development With Docker Compose and Machine
 
-#Featuring:
+##Feature:
 - Docker
 - Docker Compose
 - Docker Machine
@@ -9,11 +9,9 @@
 - MySQL
 - Nginx
 - Redis
-- gunicorn
+- Gunicorn
 
-### OS X Instructions
-
-#Run command:
+## Run command:
 + Start new machine:
 	```
 	$docker-machine create -d virtualbox dev;
@@ -51,5 +49,5 @@
 	$psql djangodocker --user postgres
 	```
 
-# Reference:
+## Reference:
 + [Django Development with Docker Compose and Machine](https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/)

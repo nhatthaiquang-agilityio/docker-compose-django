@@ -28,9 +28,15 @@
 	$docker-compose up -d
 	```
 
++ Create database:
+	```
+	$docker exec -it dockercomposedjango_postgres_1 bash
+	$psql djangodocker --user postgres
+	```
+
 + Create migrations:
 	```
-	$docker-compose run web /usr/local/bin/python manage.py migrate
+	$docker-compose run web /usr/local/bin/python /srv/web/manage.py migrate
 	```
 
 + Run Django App:
@@ -41,12 +47,6 @@
 + Grab IP and view in your browser:
 	```
 	docker-machine ip dev`
-	```
-
-+ Create database:
-	```
-	$docker exec -it dockercomposedjango_postgres_1 bash
-	$psql djangodocker --user postgres
 	```
 
 ## Reference:

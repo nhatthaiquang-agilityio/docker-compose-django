@@ -4,9 +4,9 @@
 - Docker
 - Docker Compose
 - Docker Machine
-- Python 3.5
+- Python 2.7
 - Django 1.8.4
-- MySQL
+- Postgres
 - Nginx
 - Redis
 - Gunicorn
@@ -41,12 +41,12 @@
 
 + Run Django App:
 	```
-	docker-compose run web python /srv/web/manage.py runserver 0.0.0.0:8000
+	$docker-compose run web python /srv/web/manage.py runserver 0.0.0.0:8000
 	```
 
 + Grab IP and view in your browser:
 	```
-	docker-machine ip dev`
+	$docker-machine ip dev`
 	```
 
 ## Reference:
